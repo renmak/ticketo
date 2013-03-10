@@ -42,9 +42,9 @@ before_filter :find_project, :only => [:show,
 	end
 
 	def destroy
-		  @project.destroy
-  			flash[:notice] = "Project has been deleted."
-  		  redirect_to projects_path
+		@project.destroy
+  		flash[:notice] = "Project has been deleted."
+  		redirect_to projects_path
 
 	end
 
