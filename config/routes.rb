@@ -1,4 +1,9 @@
 Ticketo::Application.routes.draw do
+
+  root :to => "projects#index"
+
+  resources :projects     #this will provide all CRUS paths such as new_project_path
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

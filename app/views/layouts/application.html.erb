@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<!-- to display all fash messages here -->
+<% flash.each do |key, value| %>
+	<div class'flash' id='<%= key %>' >
+		<%= value %>
+	</div>
+<% end %>
+
 <%= yield %>
 
 </body>
